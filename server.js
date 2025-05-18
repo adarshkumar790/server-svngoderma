@@ -20,7 +20,7 @@ mongoose
 
 // Middleware
 app.use(express.json());
-app.use('/uploads', express.static(path.join(__dirname, 'uploads'))); // ✅ Serve files
+app.use('/uploads', express.static(path.join(__dirname, 'uploads'))); 
 app.use('/api/upload', uploadRoutes);
 
 // Start server
